@@ -26,3 +26,32 @@ Dart compilé à l'avance peut etre compilé AOT en code machine ( jeux d'instru
 ## Isoler
 
 Pour obtenir la simultanéité, Dart utilise des isolats, qui sont des travailleurs indépendants qui ne partage pas de mémoire , mais utilisent plutot le transfert de messages. Ceci est similaire aux processus Erlang; Chaque programme Dart utilise au moins un isolat principal. Depuis Dart 2, la plate-forme Web ne prend plus en charge les isolats et suggère aux développeurs d'utiliser Web Workers.
+
+## Stockage
+
+Les stockages sont une partie essentille de la Machine Virtuelle Dart. Ce sont des fichiers qui stockent des objects et d'autres données d'éxecution.
+
+* Script de stockage
+Les programmes Dart peuvent etre compilés en fichiers de stockage.
+Ces fichiers contiennent tout le code du programme et les dépendances préalablement préparés et prets à etre exécutés. Cela permet des démarrage rapides.
+
+* Stockage complets
+Les bibliothèques principales de Dart peuvent etre compilées dans un fichier de stockage qui permet un chargement rapide des bibliothèqyes. La plupart des distributions de la machine virtuelle Dart principale ont un stockage prédéfini pour les bibliothèques principales chargé au moment de l'éxécution.
+
+* Stockage d'objects
+Dart est un langage très asynchrone. Avec cela , il utilise de isolats pour la simultanéité. Comme ce sont des ouvriers qui passent des messages , il faut un moyen de sérialiser un message. Cette opération est effectuée à l'aide d'un stockage généré à partir d'un objet donné, puis transféré vers un autre isolat pour la désérialisation.
+
+## Applications mobiles
+
+Google a introduit *flutter* pour le developpement d'applications mobiles natives sur Android , IOS .
+*Flutter* est un kit de développement logiciel (SDK) pour applications mobiles , doté de structures, de widget et des outils, qui permet aux développeurs de créer et de déployer des applications mobiles écrites en Dart. Flutter fonctionne avec *Firebase* et d'autres SDK d'applications mobiles et est open-source .
+
+## Compiler en JavaScript
+
+Le SDK Dart contient deux compilateurs Dart-to-JavaScript. Pendant le developpement, *dartdevc* prend en charge les cycles d'actualisation rapides. Pour la version finale d'une application, dart2js produit du code JavaScript déployable. 
+
+Le premier compilateur à générer du code JavaScript à partir de code Dart était *dartc*, mais il était obsolète. Le deuxième compilateur *Dart-to-JavaScript* était *Forg*. Il a été écrit en Dart, mais n'a jamais implémenté la sémantique complète du langage. Le troisième compilateur *Dart-to-JavaScript* était *dart2js*. *Dart2js* est une évolution des premiers compilateurs , écrite en Dart et destiné à implémenter la spécification et la sémantique complètes du langage Dart.
+
+Le 28 Mars 2013, l'équipe Dart a publié une mise ) jour de son blog concernant le code Dart compilé en JavaScript avec le compilateur *dart2js*, indiquant qu'il s'exécute désormais plus rapidement que JavaScript manuscrit sur le moteur V8 de chrome pour le benchmark *DeltaBlue*.
+
+## Editeurs
