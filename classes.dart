@@ -14,21 +14,23 @@ class SpaceCraft {
   int get launchYear => launchDate?.year; // read-only
 
   // Methods
-
   void describe() {
-    print('SpaceCraft 🛰: $name');
+    print('SpaceCraft 🛰 : $name');
     if(launchDate != null) {
       int years = DateTime.now().difference(launchDate).inDays
       ~/ 365;
       print('Launched 🚀: $launchYear ($years year ago)');
     } else  {
-      print("Unlaunched");
+      print("State: Unlaunched");
     }
   }
 }
 
+// Instance of SpaceCraft
 var voyager = SpaceCraft('Voyager I', DateTime(1977, 9, 5));
+var voyagerII = SpaceCraft.unlaunched('Voyager II');
 
 void main() {
-  voyager.describe();
+  // voyager.describe();
+  voyagerII.describe();
 }
