@@ -50,11 +50,10 @@ var x = 1; // reconnu comme un int
 var y = 1.1; // ---- comme un double
 var hex = 0xDEADBEEF; // reconnu comme un int
 double z = 1; // converti implicitement en z = 1.0
+int number = 20; // valeur par défaut
 
 
-
-
-
+// permet d'executer notre code en ligne de commande
 main() {
   print(alphabet.length); // 2
   print(bartSimpson); // Bart Simpso,
@@ -62,7 +61,9 @@ main() {
   print(ligneCount); // null
   print(PI); // 3.14
   print(z);
-
+  // valeur par défaut de number est 20;
+  print(number);  // 20
+  print(number = 10); // 10
 }
 
 
