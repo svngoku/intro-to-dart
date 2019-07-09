@@ -54,4 +54,6 @@ Le premier compilateur à générer du code JavaScript à partir de code Dart é
 
 Le 28 Mars 2013, l'équipe Dart a publié une mise ) jour de son blog concernant le code Dart compilé en JavaScript avec le compilateur *dart2js*, indiquant qu'il s'exécute désormais plus rapidement que JavaScript manuscrit sur le moteur V8 de chrome pour le benchmark *DeltaBlue*.
 
-## Editeurs
+## Editeurs
+
+
