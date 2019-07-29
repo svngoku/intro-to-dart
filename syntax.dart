@@ -79,6 +79,14 @@ var s = 'un beau langage' ;
 var message = "Dart est $s";
 
 
+//  arrays
+var names = ['Nelson', 'Ferial'];
+var list = new List();
+
+
+
+
+
 
 
 
