@@ -1,6 +1,5 @@
 # ![alt text](https://dart.dev/assets/shared/dart-logo-for-shares.png?2)
 
-
 Dart est un langague de programmation optomisé par le client pour application rapides sur multiple plate-formes. Developpé par Google , il permet de créer des applications mobiles, de bureau , coté serveur et web.
 
 Dart est langage orienté object défini par la classe  ,utilisant la syntax du style C et transpiller en JavaScript .
@@ -55,5 +54,3 @@ Le premier compilateur à générer du code JavaScript à partir de code Dart é
 Le 28 Mars 2013, l'équipe Dart a publié une mise ) jour de son blog concernant le code Dart compilé en JavaScript avec le compilateur *dart2js*, indiquant qu'il s'exécute désormais plus rapidement que JavaScript manuscrit sur le moteur V8 de chrome pour le benchmark *DeltaBlue*.
 
 ## Editeurs
-
-

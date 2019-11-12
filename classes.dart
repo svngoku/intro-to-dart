@@ -1,7 +1,6 @@
 class SpaceCraft {
   String name;
   DateTime launchDate;
-
   // constructor
   SpaceCraft(n, d) {
     this.name = n;
